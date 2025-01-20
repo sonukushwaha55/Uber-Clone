@@ -27,6 +27,8 @@ const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/regist
 if(response.status === 201){
   const data = response.data
   setUser(data.user)
+  localStorage.setItem('token', data.token)
+
   navigate('/home')
 }
 
