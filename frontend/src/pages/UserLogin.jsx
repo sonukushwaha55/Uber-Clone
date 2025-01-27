@@ -18,10 +18,10 @@ const UserLogin = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
 
-    const userData = {
-      email: email,
+   const userData = {
+    email: email,
       password: password
-    }
+   }
 
     const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/login`, userData)
 

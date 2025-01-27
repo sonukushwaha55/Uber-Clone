@@ -42,7 +42,7 @@ const LiveTracking = () => {
               setCurrentPosition({
                   lat: latitude,
                   lng: longitude
-              });
+              });  
           });
       };
 
